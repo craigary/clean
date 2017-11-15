@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Salih ÇİFTÇİ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="TR"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https:/salih.co//imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://salih.co/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://salih.co/imgs/favicon-16x16.png">
+    <link rel="manifest" href="https://salih.co/imgs/manifest.json">
+    <link rel="mask-icon" href="https://salih.co/imgs/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #ffffff">
+    <!--menu start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="https://salih.co/blog">Salih Çiftçi</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://salih.co/blog/">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://salih.co/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://instagram.com/salihcftci/">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/salihciftci">Open Source</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--menu end-->
+    <!--about start-->
+    <article class="about-me">
+      <!--header start-->
+      <div  class="photo mb-4" style="background-image: url('https://salih.co/imgs/back.jpg');
+                background-size: cover;
+                background-position: center center;">
+
+        <div class="text-center">
+          <img src="https://salih.co/imgs/avatar.png" class="rounded-circle" width="170px;" style="margin-top: 50px; margin-bottom: 50px;">
+        </div>
+      </div>
+      <!--header end-->
+      <!--text start-->
+      <div class="container apply-footer article-body">
+        <div class="row">
+          <div class="col-12 col-lg-8" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 150%; letter-spacing: 0.5px; line-height: 40px;"><br>
+            {{#foreach posts}}
+			<article class="{{post_class}}">
+    			<header class="post-header">
+        			<h2 class="post-title" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 170%;"><a href="{{url}}" style="color: initial;">{{{title}}}</a></h2>
+    			</header>
+    			<span style="font-family: 'Open Sans Condensed', sans-serif; font-size: 80%;">
+    				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+    			</span>
+    			<section class="post-excerpt">        
+        		<p>{{excerpt words="40"}} <a class="read-more" href="{{url}}">Read More &rarr;</a></p>
+    			</section>
+			</article><br>
+			{{/foreach}}
+			{{pagination}} <br><br>
+          </div>
+        </div>
+      </div>
+      <!--text end-->
+    </article>
+    <!--about end-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109664543-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109664543-1');
+    </script>
+    <!-- Google Analytics -->
+  </body>
+</html>
