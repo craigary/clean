@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="TR"/>  
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="apple-touch-icon" sizes="180x180" href="https:/salih.co//imgs/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://salih.co/imgs/favicon-32x32.png">
@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body style="background-color: #ffffff">
+  <body style="background-color: #ffffff; font-family: 'Raleway', sans-serif;">
     <!--menu start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="https://salih.co/blog">Salih Çiftçi</a>
@@ -55,17 +55,17 @@
       <!--text start-->
       <div class="container apply-footer article-body">
         <div class="row">
-          <div class="col-12 col-lg-8" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 150%; letter-spacing: 0.5px; line-height: 40px;"><br>
+          <div class="col-12 col-lg-8" style="font-size: 110%; letter-spacing: 0.5px; line-height: 30px;"><br>
             {{#foreach posts}}
 			<article class="{{post_class}}">
     			<header class="post-header">
-        			<h2 class="post-title" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 170%;"><a href="{{url}}" style="color: initial;">{{{title}}}</a></h2>
+        			<h2 class="post-title" style="font-family: 'Raleway', sans-serif; font-size: 170%;"><a href="{{url}}" style="color: initial;">{{{title}}}</a></h2>
     			</header>
-    			<span style="font-family: 'Open Sans Condensed', sans-serif; font-size: 80%;">
+    			<span style="font-size: 80%;">
     				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
     			</span>
     			<section class="post-excerpt">        
-        		<p>{{excerpt words="40"}} <a class="read-more" href="{{url}}">Read More &rarr;</a></p>
+        		<p>{{excerpt words="80"}} <a class="read-more" href="{{url}}">Read More &rarr;</a></p>
     			</section>
 			</article><br>
 			{{/foreach}}
