@@ -1,0 +1,10 @@
+<nav>
+	<span class="title">
+		<a href="/">{{meta_title}}</a>
+	</span>
+	<span class="nav">
+	{{#foreach navigation}}
+		<a href="{{url absolute="true"}}">{{label}}</a>&nbsp
+	{{/foreach}}
+	</span>
+</nav>
