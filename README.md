@@ -2,20 +2,21 @@
     <img src="https://github.com/salihciftci/clean/blob/master/src/home.png?raw=true" width="500">
 </p>
 
-#Clean
+# Clean
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
 Tag based responsive [Ghost](https://ghost.org/) theme.
 
 
-##Manual Installation
+## Manual Installation
 
 We need to setup clean manually because listing tag posts is currently not possible in ghost. For more information check it out ErisDS's [answer](https://stackoverflow.com/a/30381801) on stackoverflow.
 
 Here is the sample code about how to get all posts in specific tag;
 
 ``` hbs
-<a id="Networking"></a><h2>Networking</h2>
+<a id="Networking"></a>
+<h2>Networking</h2>
 {{#get "posts" filter="tags:networking"}}
     {{#foreach posts}}
     <h3>
@@ -43,7 +44,7 @@ We used semicolons because limit is a string. For more information check [ghost 
 
 And thats it.
 
-##Screenshots
+## Screenshots
 
 
 ![](https://github.com/salihciftci/clean/blob/master/src/home.png?raw=true)
