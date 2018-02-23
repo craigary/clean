@@ -26,7 +26,7 @@ Here is the sample code about how to get all posts in specific tag;
 			</span>
 		</h3>
 		{{/foreach}}
-{{/get}}
+	{{/get}}
 ```
 
 We need to edit get function for our tags.
