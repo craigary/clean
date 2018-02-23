@@ -1,23 +1,41 @@
 {{!< default}}
-		<a id="Networking"></a><h2>Networking</h2>
-		{{#get "posts" filter="tags:networking"}}
+	<a id="Networking"></a>
+	<h2>Networking</h2>
+	{{#get "posts" filter="tags:networking"}}
 		{{#foreach posts}}
-		<h3><a href="{{url}}">{{title}}</a><span class="main-time"><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span></h3>
+		<h3>
+			<a href="{{url}}">{{title}}</a>
+			<span class="main-time">
+				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			</span>
+		</h3>
 		{{/foreach}}
-		{{/get}}
+	{{/get}}
 
-		<a id="Programming"></a><h2>Programming</h2>
-		{{#get "posts" filter="tags:programming"}}
+	<a id="Programming"></a>
+	<h2>Programming</h2>
+	{{#get "posts" filter="tags:programming"}}
 		{{#foreach posts}}
-		<h3><a href="{{url}}">{{title}}</a><span class="main-time"><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span></h3>
+		<h3>
+			<a href="{{url}}">{{title}}</a>
+			<span class="main-time">
+				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			</span>
+		</h3>
 		{{/foreach}}
-		{{/get}}
+	{{/get}}
 
 
-		<a id="Personal"></a><h2>Personal</h2>
-		{{#get "posts" filter="tags:personal"}}
+	<a id="Personal"></a>
+	<h2>Personal</h2>
+	{{#get "posts" filter="tags:personal"}}
 		{{#foreach posts}}
-		<h3><a href="{{url}}">{{title}}</a><span class="main-time"><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span></h3>
+		<h3>
+			<a href="{{url}}">{{title}}</a>
+			<span class="main-time">
+				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			</span>
+		</h3>
 		{{/foreach}}
-		{{/get}}
+	{{/get}}
 
