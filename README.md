@@ -15,7 +15,8 @@ We need to setup clean manually because listing tag posts is currently not possi
 Here is the sample code about how to get all posts in specific tag;
 
 ``` hbs
-<a id="Networking"></a><h2>Networking</h2>
+<a id="Networking"></a>
+<h2>Networking</h2>
 {{#get "posts" filter="tags:networking"}}
     {{#foreach posts}}
     <h3>
