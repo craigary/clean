@@ -16,17 +16,17 @@ Here is the sample code about how to get all posts in specific tag;
 
 ``` hbs
 <a id="Networking"></a>
-	<h2>Networking</h2>
-	{{#get "posts" filter="tags:networking"}}
-		{{#foreach posts}}
-		<h3>
-			<a href="{{url}}">{{title}}</a>
-			<span class="main-time">
-				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-			</span>
-		</h3>
-		{{/foreach}}
-	{{/get}}
+<h2>Networking</h2>
+{{#get "posts" filter="tags:networking"}}
+	{{#foreach posts}}
+	<h3>
+		<a href="{{url}}">{{title}}</a>
+		<span class="main-time">
+			<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+		</span>
+	</h3>
+	{{/foreach}}
+{{/get}}
 ```
 
 We need to edit get function for our tags.
