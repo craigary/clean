@@ -18,18 +18,27 @@
 <body>
 	<div class="container">
 		<div class="main">
+
 		{{navigation}}
-		<hr>
-
-		{{{body}}}
-
-		<hr>
-		<center><3</center>
-		<br>
+		
+			<hr>
+			{{{body}}}
+			<hr>
+			<footer>
+				<span class="credits">
+					<small>Theme <a href="https://github.com/salihciftci/clean">Clean</a> by <a href="https://salih.co/">Salih Çiftçi</a></small>
+				</span>
+				<span class="credits-software">
+					<small>Published with <a href="http://ghost.org">Ghost</a></small>
+				</span>
+			</footer>
+			<br>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+
+	{{ghost_foot}}
 	
 </body>
 </html>

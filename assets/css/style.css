@@ -65,6 +65,23 @@ hr {
 	margin: 2.5rem 0;
 }
 
+.credits {
+	color: #45484d;
+}
+
+.credits a {
+	color: #45484d;
+}
+
+.credits-software {
+	color: #45484d;
+	float: right;
+}
+
+.credits-software a {
+	color: #45484d;
+}
+
 @media screen and (max-width: 415px) {
     div span:last-of-type {
         float: none;
