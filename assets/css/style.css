@@ -67,6 +67,10 @@ pre {
 	margin-top: 0;
 }
 
+.content {
+	font-size : 17px;
+}
+
 hr {
 	background-color: #ccc;
 	height: 1px;
