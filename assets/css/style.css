@@ -1,7 +1,8 @@
 body {
 	background-color: #fafafa;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', "Helvetica Neue", "Arial", "PingFang SC", -apple-system, BlinkMacSystemFont, "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", "Microsoft YaHei Light", "Microsoft JhengHei", sans-serif;
 	line-height: 1.5;
+	font-weight: 300;
 }
 .container {
 	margin: 0 auto;
@@ -15,13 +16,17 @@ body {
 }
 
 h2 {
-	font-size 22px;
-	font-weight: 500;
+	font-size: 22px;
+	font-weight: 400;
 	display: inline;
 }
 
 h3 {
-	font-weight: normal;
+	font-weight: 400;
+}
+
+h3.postlink {
+	font-weight: 300
 }
 
 .nav {
@@ -49,6 +54,13 @@ h3 {
 a {
 	color: #005baa;
 	text-decoration: none;
+}
+
+.kg-card,
+.kg-image-card,
+.kg-card-hascaption {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 img {

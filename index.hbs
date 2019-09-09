@@ -1,10 +1,10 @@
 {{!< default}}
 
-	<a id="networking"></a>
-	<h2>Networking</h2>
-	{{#get "posts" filter="tags:networking"}}
+	<a id="code"></a>
+	<h2>Code</h2>
+	{{#get "posts" filter="tags:code" limit="5"}}
 		{{#foreach posts}}
-		<h3>
+		<h3 class="postlink">
 			<a href="{{url}}">{{title}}</a>
 			<span class="main-time">
 				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
@@ -15,9 +15,9 @@
 
 	<a id="homelab"></a>
 	<h2>HomeLab</h2>
-	{{#get "posts" filter="tags:homelab"}}
+	{{#get "posts" filter="tags:homelab" limit="5"}}
 		{{#foreach posts}}
-		<h3>
+		<h3 class="postlink">
 			<a href="{{url}}">{{title}}</a>
 			<span class="main-time">
 				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
@@ -26,12 +26,11 @@
 		{{/foreach}}
 	{{/get}}
 
-
-	<a id="code"></a>
-	<h2>Code</h2>
-	{{#get "posts" filter="tags:code"}}
+	<a id="personal"></a>
+	<h2>Personal</h2>
+	{{#get "posts" filter="tags:personal" limit="5"}}
 		{{#foreach posts}}
-		<h3>
+		<h3 class="postlink">
 			<a href="{{url}}">{{title}}</a>
 			<span class="main-time">
 				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
